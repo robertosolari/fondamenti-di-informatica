@@ -3,7 +3,7 @@ Esercitazione 1
 
 Lanciare code::blocks e provare ad usarlo
 
- - leggere da tastiera un numero a virgola mobile (float), stamparlo in formato scientifico
+ - leggere da tastiera un carattere (char) e stampare il suo codice ASCII
 
 */
 
@@ -11,11 +11,11 @@ Lanciare code::blocks e provare ad usarlo
 #include <stdlib.h>
 
 int main(){
-    float a;
+    char ch;
     
-    printf("Inserisci un numero a virgola mobile ");
-    scanf("%f", &a);
-    printf("formato decimale: %e", a);
+    printf("Inserisci un carattere per visualizzare il suo codice ascii ");
+    scanf("%c", &ch);
+    printf("the ascii code of %c is %d", ch,ch);
 
     return 0;
 }
